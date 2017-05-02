@@ -2,7 +2,7 @@
 
 **OPPAS** is a snake robot intended for research with robots that mimic the structure of a snake.
 The main reason I started this project is because I wanted a fast way to produce a snake robot that was easy to build and deploy, but without the need of drastic hanges if a component of the robot changes.
-The documentation is published in [OPPAS documentation](https://fabreyesmecha.github.io/OPPAS/), but OPPAS's project files can be downloaded in *TODO*.
+The documentation is published in [OPPAS documentation](https://fabreyesmecha.github.io/OPPAS/), but OPPAS's project files can be downloaded in [https://grabcad.com/library/oppas-open-source-parametric-snake-robot-1](https://grabcad.com/library/oppas-open-source-parametric-snake-robot-1).
 
 ![presentation.png](OPPAS_imgs/presentation.png "OPPAS introduction")
 
