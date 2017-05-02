@@ -4,7 +4,7 @@
 The main reason I started this project is because I wanted a fast way to produce a snake robot that was easy to build and deploy, but without the need of drastic hanges if a component of the robot changes.
 The documentation is published in [OPPAS documentation](https://fabreyesmecha.github.io/OPPAS/), but OPPAS's project files can be downloaded in *TODO*.
 
-![introduction.png](OPPAS_imgs/introduction.png "OPPAS introduction")
+![presentation.png](OPPAS_imgs/presentation.png "OPPAS introduction")
 
 In essence, a snake robot is very simple; it is a series of links connected by joints.
 However, the shape and size of the links and joints will change depending on the components you use.
