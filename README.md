@@ -24,7 +24,7 @@ Since the design is parametric (and the number of parameters is limited) the des
 In other words, there may be a lot of *wasted* space inside the robot.
 
 OPPAS is an attempt to make snake robots easier to build and to test your ideas.
-It is **open-source**; the robot was designedusing Autodesk Fusion 360.
+It is **open-source**; the robot was designed using Autodesk Fusion 360.
 The files can be downloaded and the whole project can be recreated in your computer.
 I consider this to be more useful than sharing .STL files that have to be downloaded and modified to fit your needs.
 As mentioned before, OPPAS is **parametric**.
@@ -54,5 +54,29 @@ In particular, I would like to improve the following points:
 
 ## License
 
-OPPAS is aproject being developed in Ritsumeikan University, by the Biomimetic Intelligent Mechatronics (BioInMech) Laboratory.
+**OPPAS** is a project being developed in Ritsumeikan University, by the Biomimetic Intelligent Mechatronics (BioInMech) Laboratory.
+**OPPAS** is licensed under the [Creative Commons Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode) license to **Fabian Eugenio Reyes Pinner** (Fabian Reyes) (2017).
+A summary of the license is provided below:
+
+```
+You are free to:
+
+    Share — copy and redistribute the material in any medium or format
+    Adapt — remix, transform, and build upon the material
+    for any purpose, even commercially.
+
+    The licensor cannot revoke these freedoms as long as you follow the license terms.
+
+    Under the following terms:
+
+    Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+    No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+```
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+The full license can be found here: [https://creativecommons.org/licenses/by/4.0/legalcode](https://creativecommons.org/licenses/by/4.0/legalcode)
+
 BioInMech's logo is property of the BioInMech Laboratory.
+
+![malab_logo.png](OPPAS_imgs/malab_logo.png "BioInMech Logo")
