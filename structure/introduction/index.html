@@ -57,11 +57,7 @@
 </li>
                             
 <li >
-    <a href="../link/">A Link of OPPAS</a>
-</li>
-                            
-<li >
-    <a href="../joint/">The Joint of OPPAS</a>
+    <a href="../module/">A module: Link + joint</a>
 </li>
                             
 <li >
@@ -70,10 +66,13 @@
                         </ul>
                     </li>
                     <li >
-                        <a href="../../electronics/">Electronic</a>
+                        <a href="../../electronics/">Electronic Design</a>
                     </li>
                     <li >
-                        <a href="../../wacky/">Wacky Designs</a>
+                        <a href="../../assemblies/">Assemblies Examples</a>
+                    </li>
+                    <li >
+                        <a href="../../prototype/">Prototype Development</a>
                     </li>
                     <li >
                         <a href="../../about/">About</a>
@@ -92,7 +91,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../link/">
+                        <a rel="prev" href="../module/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -104,11 +103,32 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introduction-to-oppas">Introduction to OPPAS</a></li>
+        <li class="main "><a href="#overview-of-oppas-and-electronic-setup">Overview of OPPAS and electronic setup</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-</div>
+<h2 id="introduction-to-oppas">Introduction to OPPAS</h2>
+<p>The main idea of <strong>OPPAS</strong> is to provide a plataform for developers interested in snake robots or similar.
+A module of <strong>OPPAS</strong> consists of a link and a joint.
+A link and joint are further divided into the following parts:</p>
+<p><img alt="overview.png" src="../../img/overview.png" title="Overview of a module of OPPAS" /></p>
+<p>The main idea of the design of parts was to separate the parts according to their role in the robot:</p>
+<ol>
+<li>Skeleton: The spine, ribs and caps provide the main (kinematic) structure of the robot. It provides the main shape and can also be used as a base for the components.</li>
+<li>Flesh: It provides the interface between the robot and the exterior. At the same time it protects the components (i.e., do not allow the boards and cables to be completely exposed).</li>
+<li>Joint: The servos or other actuators are mounted at the joint, providing motion.</li>
+</ol>
+<h2 id="overview-of-oppas-and-electronic-setup">Overview of OPPAS and electronic setup</h2>
+<p>Currently, the servos chosen for <strong>OPPAS</strong> are Dynamixel MX-64AR servomotors from <a href="http://en.robotis.com/index/">ROBOTIS</a>.
+The microcontroller used is a Duo (RedBear) along a Rs-45 transceiver for communication with the servos.
+A library and extra hardware has been developed and documented in <a href="https://fabreyesmecha.github.io/DuoDMXL/">DuoDMXL</a>.
+Then, a multi-link <strong>OPPAS</strong> along an overview of the electronics can be represented in the following picture:</p>
+<p><img alt="introduction.png" src="../../img/introduction.png" title="OPPAS introduction" /></p>
+<p>A microcontroller is mounted on <strong>OPPAS</strong> and serves the role of main micrcontroller on the robot.
+It controls all the servos and, in future implementations it will also gather readings from sensors and finally comunicate with an external computer.
+The final objective of <strong>OPPAS</strong> is to have a closed-loop system.</p></div>
         </div>
 
         <footer class="col-md-12">

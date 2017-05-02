@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-05-01</lastmod>
+     <lastmod>2017-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,25 +13,19 @@
         
     <url>
      <loc>/structure/introduction/</loc>
-     <lastmod>2017-05-01</lastmod>
+     <lastmod>2017-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/structure/link/</loc>
-     <lastmod>2017-05-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/structure/joint/</loc>
-     <lastmod>2017-05-01</lastmod>
+     <loc>/structure/module/</loc>
+     <lastmod>2017-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/structure/optional/</loc>
-     <lastmod>2017-05-01</lastmod>
+     <lastmod>2017-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -40,15 +34,23 @@
     
     <url>
      <loc>/electronics/</loc>
-     <lastmod>2017-05-01</lastmod>
+     <lastmod>2017-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
 
     
     <url>
-     <loc>/wacky/</loc>
-     <lastmod>2017-05-01</lastmod>
+     <loc>/assemblies/</loc>
+     <lastmod>2017-05-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+    
+
+    
+    <url>
+     <loc>/prototype/</loc>
+     <lastmod>2017-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -56,7 +58,7 @@
     
     <url>
      <loc>/about/</loc>
-     <lastmod>2017-05-01</lastmod>
+     <lastmod>2017-05-03</lastmod>
      <changefreq>daily</changefreq>
     </url>
     

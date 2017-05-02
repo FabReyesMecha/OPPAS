@@ -57,11 +57,7 @@
 </li>
                             
 <li >
-    <a href="../link/">A Link of OPPAS</a>
-</li>
-                            
-<li >
-    <a href="../joint/">The Joint of OPPAS</a>
+    <a href="../module/">A module: Link + joint</a>
 </li>
                             
 <li class="active">
@@ -70,10 +66,13 @@
                         </ul>
                     </li>
                     <li >
-                        <a href="../../electronics/">Electronic</a>
+                        <a href="../../electronics/">Electronic Design</a>
                     </li>
                     <li >
-                        <a href="../../wacky/">Wacky Designs</a>
+                        <a href="../../assemblies/">Assemblies Examples</a>
+                    </li>
+                    <li >
+                        <a href="../../prototype/">Prototype Development</a>
                     </li>
                     <li >
                         <a href="../../about/">About</a>
@@ -87,7 +86,7 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../joint/">
+                        <a rel="next" href="../module/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
@@ -104,11 +103,47 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#optional-parts">Optional parts</a></li>
+            <li><a href="#different-bellies">Different Bellies</a></li>
+            <li><a href="#tail">Tail</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-</div>
+<h2 id="optional-parts">Optional parts</h2>
+<h3 id="different-bellies">Different Bellies</h3>
+<p>Additional parts are provided, both as a source of inspiration and as a quick way to implement a working prototype.
+The belly of the robot (called <em>fleshBottom</em>) can be designed according to the application.
+Three models are provided in the current project of <strong>OPPAS</strong>.</p>
+<table>
+<thead>
+<tr>
+<th align="left">Optional part</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">fleshBottomGeneric</td>
+<td align="left">A bottom part without any additional component.</td>
+</tr>
+<tr>
+<td align="left">fleshBottomTwoWheels</td>
+<td align="left">A bottom part with two wheels to provide anisotropic friction with the ground.</td>
+</tr>
+<tr>
+<td align="left">fleshBottomBearing</td>
+<td align="left">A part with a (Tamiya) spherical bearing. The objective is to remove the friction altogether. The model of the bearing can be found in the <a href="https://grabcad.com/library/tamiya-70144-caster-ball-1">Tamiya 70144 Caster Ball</a> project at <a href="https://grabcad.com/library">GRABCAD</a>.</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="optional_parts.png" src="../../img/optional_parts.png" title="Optional parts" /></p>
+<h3 id="tail">Tail</h3>
+<p>The tail's design would depend on the user's requirements.
+For completeness' sake, we provide a tail design currently being used for our research.
+The tail's parameters are the same as previous parts but is provided as a separate file (to keep the main file of the module of <strong>OPPAS</strong> as fast and small as possible).</p>
+<p><img alt="tail.png" src="../../img/tail.png" title="Tail" /></p>
+<p>The current implementation of the tail includes a 'base' (e.g., for a microcontroller board) and two <a href="https://grabcad.com/library/illuminated-toggle-switch-with-cover-1">toggle switches</a>.</p></div>
         </div>
 
         <footer class="col-md-12">

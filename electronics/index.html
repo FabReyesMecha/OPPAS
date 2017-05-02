@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Electronic - OPPAS</title>
+        <title>Electronic Design - OPPAS</title>
         <link href="../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -57,11 +57,7 @@
 </li>
                             
 <li >
-    <a href="../structure/link/">A Link of OPPAS</a>
-</li>
-                            
-<li >
-    <a href="../structure/joint/">The Joint of OPPAS</a>
+    <a href="../structure/module/">A module: Link + joint</a>
 </li>
                             
 <li >
@@ -70,10 +66,13 @@
                         </ul>
                     </li>
                     <li class="active">
-                        <a href="./">Electronic</a>
+                        <a href="./">Electronic Design</a>
                     </li>
                     <li >
-                        <a href="../wacky/">Wacky Designs</a>
+                        <a href="../assemblies/">Assemblies Examples</a>
+                    </li>
+                    <li >
+                        <a href="../prototype/">Prototype Development</a>
                     </li>
                     <li >
                         <a href="../about/">About</a>
@@ -92,7 +91,7 @@
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../wacky/">
+                        <a rel="prev" href="../assemblies/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -104,11 +103,22 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#overview-of-the-electronics">Overview of the electronics</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-</div>
+<h2 id="overview-of-the-electronics">Overview of the electronics</h2>
+<p><strong>OPPAS</strong> Mk. 1.0 uses a <a href="https://github.com/redbear/Duo">Duo</a> as main microcontroller board.
+A library for controlling the Dynamixel servos (called <strong>DuoDMXL</strong>) has been developed and is currently being documented in:</p>
+<ul>
+<li><a href="https://github.com/FabReyesMecha/DuoDMXL">DuoDMXL GitHub repository</a></li>
+<li><a href="https://fabreyesmecha.github.io/DuoDMXL/">DuoDMXL documentation</a></li>
+</ul>
+<p>The overviewof the electronics setup can be seen in the following picture:</p>
+<p><img alt="introduction.png" src="../img/introduction.png" title="OPPAS introduction" /></p>
+<p>The MX-64AR servos require additional hardware for communication.
+Check the documentation of <strong>DuoDMXL</strong> for additional information.</p></div>
         </div>
 
         <footer class="col-md-12">

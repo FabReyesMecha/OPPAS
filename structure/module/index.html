@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../../img/favicon.ico">
+        <title>A module: Link + joint - OPPAS</title>
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+        <![endif]-->
+	
+	<script src="../../js/jquery-1.10.2.min.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script> 
+    </head>
+
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+
+        <!-- Collapsed navigation -->
+        <div class="navbar-header">
+            <!-- Expander button -->
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../..">OPPAS</a>
+        </div>
+
+        <!-- Expanded navigation -->
+        <div class="navbar-collapse collapse">
+                <!-- Main navigation -->
+                <ul class="nav navbar-nav">
+                    <li >
+                        <a href="../..">Home</a>
+                    </li>
+                    <li class="dropdown active">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Body of OPPAS <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            
+<li >
+    <a href="../introduction/">Introduction to OPPAS Structure</a>
+</li>
+                            
+<li class="active">
+    <a href="./">A module: Link + joint</a>
+</li>
+                            
+<li >
+    <a href="../optional/">Optional Parts</a>
+</li>
+                        </ul>
+                    </li>
+                    <li >
+                        <a href="../../electronics/">Electronic Design</a>
+                    </li>
+                    <li >
+                        <a href="../../assemblies/">Assemblies Examples</a>
+                    </li>
+                    <li >
+                        <a href="../../prototype/">Prototype Development</a>
+                    </li>
+                    <li >
+                        <a href="../../about/">About</a>
+                    </li>
+                </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#" data-toggle="modal" data-target="#mkdocs_search_modal">
+                        <i class="fa fa-search"></i> Search
+                    </a>
+                </li>
+                    <li >
+                        <a rel="next" href="../introduction/">
+                            <i class="fa fa-arrow-left"></i> Previous
+                        </a>
+                    </li>
+                    <li >
+                        <a rel="prev" href="../optional/">
+                            Next <i class="fa fa-arrow-right"></i>
+                        </a>
+                    </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+        <div class="container">
+                <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
+    <ul class="nav bs-sidenav">
+        <li class="main active"><a href="#introduction">Introduction</a></li>
+        <li class="main "><a href="#link-of-oppas">Link of OPPAS</a></li>
+            <li><a href="#spine">Spine</a></li>
+            <li><a href="#rib">Rib</a></li>
+            <li><a href="#caps-also-called-modulecaps">Caps (also called moduleCaps)</a></li>
+            <li><a href="#flesh">Flesh</a></li>
+        <li class="main "><a href="#joint-of-oppas">Joint of OPPAS</a></li>
+            <li><a href="#ubracket">uBracket</a></li>
+            <li><a href="#servobase">servoBase</a></li>
+        <li class="main "><a href="#result">Result</a></li>
+    </ul>
+</div></div>
+                <div class="col-md-9" role="main">
+
+<h2 id="introduction">Introduction</h2>
+<p>As mentioned before, a module of <strong>OPPAS</strong> is divided into two parts: the <strong>link</strong> and the <strong>joint</strong>.
+The link's main objective is to give structure to the robot and it has a big influence on the total length of the robot.
+In addition it will house the components (e.g., batteries, sensors, microcontroller boards).
+Depending on the robot you need, you may skip the link altogether and just put together a bunch of joints.</p>
+<h2 id="link-of-oppas">Link of OPPAS</h2>
+<p>The link is divided into two sets of parts: the <em>skeleton</em> and the <em>flesh</em>.
+The main role of the skeleton is to provide the structure of the robot.
+The main parts of the skeleton are:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Part</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">spine</td>
+<td align="left">Provides the main support for the link</td>
+</tr>
+<tr>
+<td align="left">ribs</td>
+<td align="left">Additional strucutre to attach the flesh components to the spine</td>
+</tr>
+<tr>
+<td align="left">caps</td>
+<td align="left">It helps to put all together and enclose the internal components. It also provides an iterface with the joint's parts</td>
+</tr>
+</tbody>
+</table>
+<h3 id="spine">Spine</h3>
+<p>The design of the spine provides a flexible way to attach extra components.
+The idea is that you can design a specific base for the components you use, and then attach it to the spine.
+The spine has a set of rails and the geometry of these can be controlled parametrically.
+The final length of the spine is controlled by the number of segments (rail's teeth + spacing) and the geometry of these.</p>
+<p><img alt="spine.png" src="../../img/spine.png" title="The spine" /></p>
+<p>The main parameters of the spine that can be changed are summarized as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Spine's parameter</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>spineInnerDiameter</code></td>
+<td align="left">The spine has an hexagonal cross-section, circumscribed on a circle with a diameter called <code>spineInnerDiameter</code>. A set of four M2.5 screw holes are automatically generated, coincident with a circle 80% the size of <code>spineInnerDiameter</code>. This allows the holes to be generated automatically and always consistent with the spine diameter. Change this parameter to a fixed value if you require it.</td>
+</tr>
+<tr>
+<td align="left"><code>rail*</code></td>
+<td align="left">The set of parameters related to the rail design (<code>railNeck</code>, <code>railWidth</code>, <code>railInnerWidth</code>, <code>railHeight</code>) controls the geometry of the cross-section of the rail. The parameters <code>railSpacing</code> and <code>railThickness</code> control their geometry along the longitudinal axis of the spine. One 'segment' is composed of one rail's segment (I sometimes call them teeth) and a spacing.</td>
+</tr>
+<tr>
+<td align="left"><code>noSegments</code></td>
+<td align="left">Number of segments (rail's tooth + its spacing) composing the spine.</td>
+</tr>
+<tr>
+<td align="left"><code>linkLength</code></td>
+<td align="left">The final length of the link is controlled by how many segments (a tooth and its spacing) you need, and its size controlled by <code>railSpacing</code> and <code>railThickness</code>. If you need a constant rail just set <code>railSpacing</code>=0, <code>railThickness</code>=desired length, and <code>noSegments</code>=1. This allows to generate a link always consistent with a discrete number of teeth.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="rib">Rib</h3>
+<p>The main role of the ribs is to attach the flesh components to the spine.
+A secondary objective I had into mind is to also provide a strucutre to attach extra components (e.g., sensors) if required.
+However, I have not implemented this yet.</p>
+<p>Once the three components of the flesh are slided into the ribs, their movement is constrained without the need of extra parts, like bolts or screws.
+The model of <strong>OPPAS</strong> that can be currently downloaded does not provide additional holes to attach the vertebras to the spine.
+It relies completely on friction and the form-closure achieved when the <em>flesh</em> parts are attached.
+This is to keep the design consistent and avoid problems, since a screw hole of a given size may not be compatible with the user's chosen <code>railThickness</code>.</p>
+<p><img alt="rib.png" src="../../img/rib.png" title="The ribs" /></p>
+<p>The main parameters of the ribs that can be changed are summarized as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Rib's parameter</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>midCircle</code></td>
+<td align="left">This parameter is seen along several parts of <strong>OPPAS</strong>. For the ribs, it works along <code>outerCircle</code> to generate the strucutre of the ribs.</td>
+</tr>
+<tr>
+<td align="left"><code>outerCircle</code></td>
+<td align="left">This parameter controls the size of the ribs. An equilaterla triangle is inscribed into a circle with diameter <code>outerCircle</code> and used to control the rib's size. <strong>Note</strong>: The parameters <code>midCircle</code> and <code>outerCircle</code> should always follow the constraing: <code>|outerCircle| &gt; |midCircle|</code>. I have not found a good bound on this value (since the geometry is influenced by other parameters), but try to keep it with at least a 10[mm] difference.</td>
+</tr>
+<tr>
+<td align="left"><code>ribCircle</code></td>
+<td align="left">Final parameter to control the size of the rib. This parameter is not used in any other part of the design.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="caps-also-called-modulecaps">Caps (also called moduleCaps)</h3>
+<p>The caps enclose the link and provide an interface with the joints.
+In addition, the interior of the caps accomodates to the ribs for extra support.
+Four slots are provided to pass cables, which location and size can be controlled by the user.
+Additional pegs provide extra strength to the design to avoid rotations along the longitudinal axis.</p>
+<p><img alt="caps.png" src="../../img/caps.png" title="The caps" /></p>
+<p>The main parameters of the caps that can be changed are summarized as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Cap's parameter</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>capDiameter</code></td>
+<td align="left">The outer diameter of the caps. It should be at least as big as <code>outerCircle</code>, but I recommend it a little bigger. In current implementation of <strong>OPPAS</strong>, the value is set as <code>capDiameter = 1.1*outerCircle</code>.</td>
+</tr>
+<tr>
+<td align="left"><code>outerCircle</code></td>
+<td align="left">Outer circle will be the diameter of the cap contacting the joint's parts.</td>
+</tr>
+<tr>
+<td align="left"><code>capThickness</code></td>
+<td align="left">Thickness od the cap (not considering the internal cavity where the ribs fit).</td>
+</tr>
+<tr>
+<td align="left"><code>slotDiameter</code></td>
+<td align="left">Control the location of the slots. In the current design of <strong>OPPAS</strong>, the parameter is set as <code>slotDiameter = 0.5*midCircle</code> to keep the design consistent. If requiered, change this to a fixed value.</td>
+</tr>
+<tr>
+<td align="left"><code>slotThikness</code></td>
+<td align="left">Thickness of the slots.</td>
+</tr>
+<tr>
+<td align="left"><code>slotLength</code></td>
+<td align="left">Length of the slots.</td>
+</tr>
+<tr>
+<td align="left"><code>slotHole</code></td>
+<td align="left">Diameter of the slot's hole. Use this to pass cables with connectors. In general, I advice <code>slotHole</code> to be at least 10[mm].</td>
+</tr>
+<tr>
+<td align="left"><code>midCircle</code></td>
+<td align="left">A set of four pegs are generated automatically at a circle with this diameter. If needed, change this to a fixed value.</td>
+</tr>
+<tr>
+<td align="left"><code>capPegDiam</code></td>
+<td align="left">Diameter of the pegs.</td>
+</tr>
+<tr>
+<td align="left"><code>capPegDepth</code></td>
+<td align="left">Length of the pegs. I use 'depth' since a matching hole is generated into other parts.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="flesh">Flesh</h3>
+<p>The <em>flesh</em> components are the main interface between the robot and the exterior.
+These parts can be designed independently from the rest of the design, but I provide a set of parts as an example.
+The <em>flesh</em> parts slide into the ribs and provide extra constraints.
+Once all parts of the flesh are inserted, the ribs should not be able to come apart from the spine.</p>
+<p><img alt="flesh.png" src="../../img/flesh.png" title="The flesh" /></p>
+<p>The main parameters of the flesh that can be changed are summarized as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Flesh's parameter</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>fleshInnerDiameter</code></td>
+<td align="left">The inner diameter of the flesh parts is controlled by this parameter. The strength and available space inside the robot are affected. The outer size is the same as <code>capDiameter</code>. You can change these values accordint to your application.</td>
+</tr>
+<tr>
+<td align="left"><code>ribRail*</code></td>
+<td align="left">The set of parameters (<code>ribRailThickness</code>, <code>ribRailWidth</code>, and <code>ribRailDepth</code>) control the geometry of the rails that slide into the ribs. There is a built-in tolerance for the rails, so that they fit correctly into the ribs even if there is shrinking of the material.</td>
+</tr>
+</tbody>
+</table>
+<p>The <em>flesh</em> parts in <strong>OPPAS</strong> Mk. 1 should not be considered as a definite design.
+The purpose of <strong>OPPAS</strong> is that they can be redesigned to accomodate to your needs, without needing to change (drastically) the rest of the parts.
+Several designs of the <em>flesh</em> could be designed and used in the same base robot.
+Chek the section <strong>Optional parts</strong> for a description of some parts that have been designed so far.</p>
+<p>A <em>flesh</em> part with the <a href="http://www.ritsumei.ac.jp/se/~shugen/">BioInMech</a> (Biomimetic Intellignet Mechatronics) Laboratory is provided.</p>
+<p><img alt="flesh_logo.png" src="../../img/flesh_logo.png" title="BioInMech Logo in flesh" /></p>
+<h2 id="joint-of-oppas">Joint of OPPAS</h2>
+<p>The joint of <strong>OPPAS</strong> is composed of two parts: <em>uBracket</em> and <em>servoBase</em>.
+These are the parts that would requiere the most effort from the user if another servo is used.
+I apologize for this, but I have not found a good and reliable way to parametrize this, since the desgin of servomotros is in general very inconsistent.
+<strong>OPPAS</strong> Mk. 1.0 is designed with Dynamixel MX-64AR servos in mind.
+However, some  of the parameters can be changed by the user to get a design as close as possible as the one requiered.</p>
+<h3 id="ubracket">uBracket</h3>
+<p>The <em>uBracket</em> connects the servo's horn to the link, providing motion.
+There are four slots, designed so that the link can be connected with a 90[deg] angle to provide flexibility in the construction of your robot.
+If the axes of all servos are parallel, the result is what is known as 'planar snake robot'.
+What is known as 'serpentine' or 'undulatory' locomotion can be achieved.
+With the motors connected with an offset of 90[deg], 3D motions can be achieved.
+However, I cannot guarantee the robustness of the current implementation of <strong>OPPAS</strong>, sine 3D motion usually comes with impacts and additional interaction with the environment.</p>
+<p><img alt="ubracket.png" src="../../img/ubracket.png" title="The uBracket" /></p>
+<p>The outer diameter of the uBracket is controlled by <code>capDiameter</code> and the slots are designed to math the ones in the module caps.
+The main parameters of the uBracket that can be changed are summarized as follows:</p>
+<table>
+<thead>
+<tr>
+<th align="left">Flesh's parameter</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><code>uBracketThickness</code></td>
+<td align="left">Thickness of the uBracket.</td>
+</tr>
+<tr>
+<td align="left"><code>hornLength</code></td>
+<td align="left">Distance from the uBracket base to the axis of the servomotor. The longer <code>hornLength</code>is, the bigger the range of motion of the joint. However, this means a weaker uBracket.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="servobase">servoBase</h3>
+<p>The servoBase of <strong>OPPAS</strong> is designed for the MX-64AR servos of ROBOTIS. Therefore, no extra parameters are provided to the user.</p>
+<p><img alt="servobase.png" src="../../img/servobase.png" title="The servoBase" /></p>
+<h2 id="result">Result</h2>
+<p>The final module obtained can be seen in the following picture.</p>
+<p><img alt="module.png" src="../../img/module.png" title="module" /></p>
+<p>The values for the parameters are summarized in the following table:</p>
+<p><img alt="example_parameters.png" src="../../img/example_parameters.png" title="Example parameters" /></p></div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="http://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>var base_url = '../..';</script>
+        <script data-main="../../mkdocs/js/search.js" src="../../mkdocs/js/require.js"></script>
+        <script src="../../js/base.js"></script><div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="Search Modal" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title" id="exampleModalLabel">Search</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form role="form">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search..." id="mkdocs-search-query">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
