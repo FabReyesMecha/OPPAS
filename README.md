@@ -8,18 +8,18 @@ The documentation is published in [OPPAS documentation](https://fabreyesmecha.gi
 
 In essence, a snake robot is very simple; it is a series of links connected by joints.
 However, the shape and size of the links and joints will change depending on the components you use.
-For example, a big battery may requiere a long but slender link.
+For example, a big battery may require a long but slender link.
 But, depending on the microcontroller you use, you may need a short but thick link.
 Although putting together a bunch of u-brackets and other rigid parts is easy, this leaves the electronics and other components exposed, while at the same time properly fixing the components to the robot may be difficult.
 By making the design parametric, different snake robots can be produced, according to your requirements.
 
 Another property I was interested in was modularity.
 By modularity I mean that a module (link + joint) of the snake robot is composed of different elements that can be interchanged without needing to redesign other parts.
-For example, if your snake robot requiers passive wheels (e.g., for achieving anisotropic friction) just design the 'belly' of the robot without altering the rest.
+For example, if your snake robot requires passive wheels (e.g., for achieving anisotropic friction) just design the 'belly' of the robot without altering the rest.
 Or, you may change the wheel's model and redesign the necessary part.
 You are using a bigger battery that doesn't fit the current robot? Just make a longer link without affecting the joints.
 
-However, there are some sacrifices to be made to keep the desig as general as possible.
+However, there are some sacrifices to be made to keep the design as general as possible.
 Since the design is parametric (and the number of parameters is limited) the design is not optimal.
 In other words, there may be a lot of *wasted* space inside the robot.
 
