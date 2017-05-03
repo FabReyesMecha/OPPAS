@@ -108,6 +108,7 @@
             <li><a href="#current-version">Current version</a></li>
             <li><a href="#desired-requirements-for-future-versions">Desired requirements for future versions</a></li>
             <li><a href="#sections">Sections</a></li>
+            <li><a href="#log">Log</a></li>
             <li><a href="#license">License</a></li>
     </ul>
 </div></div>
@@ -118,19 +119,23 @@
 <p><img alt="presentation.png" src="./img/presentation.png" title="OPPAS presentation" /></p>
 <p><strong>OPPAS</strong> is a snake robot intended for research with robots that mimic the structure of a snake.
 The main reason I started this project is because I wanted a fast way to produce a snake robot that was easy to build and deploy, but without the need of drastic changes if a component of the robot changes.
-The master branch of the repository is hosted in <a href="https://github.com/FabReyesMecha/OPPAS">OPPAS repository</a>, but OPPAS's project files can be downloaded in <a href="https://grabcad.com/library/oppas-open-source-parametric-snake-robot-1">https://grabcad.com/library/oppas-open-source-parametric-snake-robot-1</a>.</p>
+The master branch of the repository is hosted in <a href="https://github.com/FabReyesMecha/OPPAS">OPPAS repository</a>, but OPPAS's project files can be downloaded at:</p>
+<ul>
+<li><a href="https://grabcad.com/library/oppas-open-source-parametric-snake-robot-1">https://grabcad.com/library/oppas-open-source-parametric-snake-robot-1</a></li>
+<li><a href="https://gallery.autodesk.com/fusion360/projects/92839/oppas-open-source-parametric-snake-robot">https://gallery.autodesk.com/fusion360/projects/92839/oppas-open-source-parametric-snake-robot</a></li>
+</ul>
 <p>In essence, a snake robot is very simple; it is a series of links connected by joints.
 However, the shape and size of the links and joints will change depending on the components you use.
-For example, a big battery may requiere a long but slender link.
+For example, a big battery may require  a long but slender link.
 But, depending on the microcontroller you use, you may need a short but thick link.
 Although putting together a bunch of u-brackets and other rigid parts is easy, this leaves the electronics and other components exposed, while at the same time properly fixing the components to the robot may be difficult.
 By making the design parametric, different snake robots can be produced, according to your requirements.</p>
 <p>Another property I was interested in was modularity.
 By modularity I mean that a module (link + joint) of the snake robot is composed of different elements that can be interchanged without needing to redesign other parts.
-For example, if your snake robot requiers passive wheels (e.g., for achieving anisotropic friction) just design the 'belly' of the robot without altering the rest.
+For example, if your snake robot requires passive wheels (e.g., for achieving anisotropic friction) just design the 'belly' of the robot without altering the rest.
 Or, you may change the wheel's model and redesign the necessary part.
 You are using a bigger battery that doesn't fit the current robot? Just make a longer link without affecting the joints.</p>
-<p>However, there are some sacrifices to be made to keep the desig as general as possible.
+<p>However, there are some sacrifices to be made to keep the design as general as possible.
 Since the design is parametric (and the number of parameters is limited) the design is not optimal.
 In other words, there may be a lot of <em>wasted</em> space inside the robot.</p>
 <p>OPPAS is an attempt to make snake robots easier to build and to test your ideas.
@@ -155,11 +160,11 @@ Each module costs less than US$20 (using eSun ABS).</p>
 In particular, I would like to improve the following points:</p>
 <ol>
 <li><strong>Waterproof</strong>: Make the design waterproof.</li>
-<li><strong>Support for more servos</strong>:  Currently, OPPAS Mk. 1.0 is designed with the ROBOTIS MX-64 servos in mind. I would like to support more servo's models in the future, but parametrizing them is rather difficult (e.g., they have different shapes, the screw holes positions are in different arrangements).</li>
+<li><strong>Support for more servos</strong>:  Currently, OPPAS Mk. 1.0 is designed with the ROBOTIS MX-64 servos in mind. I would like to support more servo's models in the future, but parameterizing them is rather difficult (e.g., they have different shapes, the screw holes positions are in different arrangements).</li>
 <li><strong>Smaller</strong>: Due to the MX-64 servo's size, OPPAS Mk 1.0 is <em>big</em> in comparison to other snake robots. If possible, I would like to make it a little smaller next time.</li>
 </ol>
 <h2 id="sections">Sections</h2>
-<p>This documentationis divided into the following sections:</p>
+<p>This documentation is divided into the following sections:</p>
 <table>
 <thead>
 <tr>
@@ -186,7 +191,7 @@ In particular, I would like to improve the following points:</p>
 </tr>
 <tr>
 <td align="left">Prototype Development</td>
-<td align="left">Additional information and pictures of an <strong>OPPAS</strong> protoype's development.</td>
+<td align="left">Additional information and pictures of an <strong>OPPAS</strong> prototype's development.</td>
 </tr>
 <tr>
 <td align="left">About</td>
@@ -194,10 +199,16 @@ In particular, I would like to improve the following points:</p>
 </tr>
 </tbody>
 </table>
+<h2 id="log">Log</h2>
+<ul>
+<li>[2017-05-03]: Fixed typos and improved documentation</li>
+<li>[2017-05-02]: Uploaded project to GrabCAD and Fusion360 Gallery</li>
+<li>[2017-05-01]: Initiated repository and documentation</li>
+</ul>
 <h2 id="license">License</h2>
 <p><strong>OPPAS</strong> is a project being developed in Ritsumeikan University, by the Biomimetic Intelligent Mechatronics (BioInMech) Laboratory.
 <strong>OPPAS</strong> is licensed under the <a href="https://creativecommons.org/licenses/by/4.0/legalcode">Creative Commons Attribution 4.0 International</a> license to <strong>Fabian Eugenio Reyes Pinner</strong> (Fabian Reyes) (2017).
-Find more information in the <strong>About</strong> section.</p>
+Find more information in the <a href="https://fabreyesmecha.github.io/OPPAS/about/">About</a> section.</p>
 <p><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p></div>
         </div>
 
@@ -237,5 +248,5 @@ Find more information in the <strong>About</strong> section.</p>
 
 <!--
 MkDocs version : 0.16.1
-Build Date UTC : 2017-05-02 15:36:51
+Build Date UTC : 2017-05-03 12:50:52
 -->

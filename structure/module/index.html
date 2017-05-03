@@ -140,11 +140,11 @@ The main parts of the skeleton are:</p>
 </tr>
 <tr>
 <td align="left">ribs</td>
-<td align="left">Additional strucutre to attach the flesh components to the spine</td>
+<td align="left">Additional structure to attach the flesh components to the spine</td>
 </tr>
 <tr>
 <td align="left">caps</td>
-<td align="left">It helps to put all together and enclose the internal components. It also provides an iterface with the joint's parts</td>
+<td align="left">It helps to put all together and enclose the internal components. It also provides an interface with the joint's parts</td>
 </tr>
 </tbody>
 </table>
@@ -183,9 +183,9 @@ The final length of the spine is controlled by the number of segments (rail's te
 </table>
 <h3 id="rib">Rib</h3>
 <p>The main role of the ribs is to attach the flesh components to the spine.
-A secondary objective I had into mind is to also provide a strucutre to attach extra components (e.g., sensors) if required.
+A secondary objective I had into mind is to also provide a structure to attach extra components (e.g., sensors) if required.
 However, I have not implemented this yet.</p>
-<p>Once the three components of the flesh are slided into the ribs, their movement is constrained without the need of extra parts, like bolts or screws.
+<p>Once the three components of the flesh slide into the ribs, their movement is constrained without the need of extra parts, like bolts or screws.
 The model of <strong>OPPAS</strong> that can be currently downloaded does not provide additional holes to attach the vertebras to the spine.
 It relies completely on friction and the form-closure achieved when the <em>flesh</em> parts are attached.
 This is to keep the design consistent and avoid problems, since a screw hole of a given size may not be compatible with the user's chosen <code>railThickness</code>.</p>
@@ -201,11 +201,11 @@ This is to keep the design consistent and avoid problems, since a screw hole of 
 <tbody>
 <tr>
 <td align="left"><code>midCircle</code></td>
-<td align="left">This parameter is seen along several parts of <strong>OPPAS</strong>. For the ribs, it works along <code>outerCircle</code> to generate the strucutre of the ribs.</td>
+<td align="left">This parameter is seen along several parts of <strong>OPPAS</strong>. For the ribs, it works along <code>outerCircle</code> to generate the structure of the ribs.</td>
 </tr>
 <tr>
 <td align="left"><code>outerCircle</code></td>
-<td align="left">This parameter controls the size of the ribs. An equilaterla triangle is inscribed into a circle with diameter <code>outerCircle</code> and used to control the rib's size. <strong>Note</strong>: The parameters <code>midCircle</code> and <code>outerCircle</code> should always follow the constraing: <code>|outerCircle| &gt; |midCircle|</code>. I have not found a good bound on this value (since the geometry is influenced by other parameters), but try to keep it with at least a 10[mm] difference.</td>
+<td align="left">This parameter controls the size of the ribs. An equilateral triangle is inscribed into a circle with diameter <code>outerCircle</code> and used to control the rib's size. <strong>Note</strong>: The parameters <code>midCircle</code> and <code>outerCircle</code> should always follow the constraint: <code>|outerCircle| &gt; |midCircle|</code>. I have not found a good bound on this value (since the geometry is influenced by other parameters), but try to keep it with at least a 10[mm] difference.</td>
 </tr>
 <tr>
 <td align="left"><code>ribCircle</code></td>
@@ -215,7 +215,7 @@ This is to keep the design consistent and avoid problems, since a screw hole of 
 </table>
 <h3 id="caps-also-called-modulecaps">Caps (also called moduleCaps)</h3>
 <p>The caps enclose the link and provide an interface with the joints.
-In addition, the interior of the caps accomodates to the ribs for extra support.
+In addition, the interior of the caps accommodates to the ribs for extra support.
 Four slots are provided to pass cables, which location and size can be controlled by the user.
 Additional pegs provide extra strength to the design to avoid rotations along the longitudinal axis.</p>
 <p><img alt="caps.png" src="../../img/caps.png" title="The caps" /></p>
@@ -238,11 +238,11 @@ Additional pegs provide extra strength to the design to avoid rotations along th
 </tr>
 <tr>
 <td align="left"><code>capThickness</code></td>
-<td align="left">Thickness od the cap (not considering the internal cavity where the ribs fit).</td>
+<td align="left">Thickness of the cap (not considering the internal cavity where the ribs fit).</td>
 </tr>
 <tr>
 <td align="left"><code>slotDiameter</code></td>
-<td align="left">Control the location of the slots. In the current design of <strong>OPPAS</strong>, the parameter is set as <code>slotDiameter = 0.5*midCircle</code> to keep the design consistent. If requiered, change this to a fixed value.</td>
+<td align="left">Control the location of the slots. In the current design of <strong>OPPAS</strong>, the parameter is set as <code>slotDiameter = 0.5*midCircle</code> to keep the design consistent. If required, change this to a fixed value.</td>
 </tr>
 <tr>
 <td align="left"><code>slotThikness</code></td>
@@ -287,7 +287,7 @@ Once all parts of the flesh are inserted, the ribs should not be able to come ap
 <tbody>
 <tr>
 <td align="left"><code>fleshInnerDiameter</code></td>
-<td align="left">The inner diameter of the flesh parts is controlled by this parameter. The strength and available space inside the robot are affected. The outer size is the same as <code>capDiameter</code>. You can change these values accordint to your application.</td>
+<td align="left">The inner diameter of the flesh parts is controlled by this parameter. The strength and available space inside the robot are affected. The outer size is the same as <code>capDiameter</code>. You can change these values according to your application.</td>
 </tr>
 <tr>
 <td align="left"><code>ribRail*</code></td>
@@ -296,17 +296,17 @@ Once all parts of the flesh are inserted, the ribs should not be able to come ap
 </tbody>
 </table>
 <p>The <em>flesh</em> parts in <strong>OPPAS</strong> Mk. 1 should not be considered as a definite design.
-The purpose of <strong>OPPAS</strong> is that they can be redesigned to accomodate to your needs, without needing to change (drastically) the rest of the parts.
+The purpose of <strong>OPPAS</strong> is that they can be redesigned to accommodate to your needs, without needing to change (drastically) the rest of the parts.
 Several designs of the <em>flesh</em> could be designed and used in the same base robot.
-Chek the section <strong>Optional parts</strong> for a description of some parts that have been designed so far.</p>
-<p>A <em>flesh</em> part with the <a href="http://www.ritsumei.ac.jp/se/~shugen/">BioInMech</a> (Biomimetic Intellignet Mechatronics) Laboratory is provided.</p>
+Check the section <strong>Optional parts</strong> for a description of some parts that have been designed so far.</p>
+<p>A <em>flesh</em> part with the <a href="http://www.ritsumei.ac.jp/se/~shugen/">BioInMech</a> (Biomimetic Intelligent Mechatronics) Laboratory is provided.</p>
 <p><img alt="flesh_logo.png" src="../../img/flesh_logo.png" title="BioInMech Logo in flesh" /></p>
 <h2 id="joint-of-oppas">Joint of OPPAS</h2>
 <p>The joint of <strong>OPPAS</strong> is composed of two parts: <em>uBracket</em> and <em>servoBase</em>.
-These are the parts that would requiere the most effort from the user if another servo is used.
-I apologize for this, but I have not found a good and reliable way to parametrize this, since the desgin of servomotros is in general very inconsistent.
+These are the parts that would require the most effort from the user if another servo is used.
+I apologize for this, but I have not found a good and reliable way to parametrize this, since the design of servomotors is in general very inconsistent.
 <strong>OPPAS</strong> Mk. 1.0 is designed with Dynamixel MX-64AR servos in mind.
-However, some  of the parameters can be changed by the user to get a design as close as possible as the one requiered.</p>
+However, some  of the parameters can be changed by the user to get a design as close as possible as the one required.</p>
 <h3 id="ubracket">uBracket</h3>
 <p>The <em>uBracket</em> connects the servo's horn to the link, providing motion.
 There are four slots, designed so that the link can be connected with a 90[deg] angle to provide flexibility in the construction of your robot.
@@ -315,7 +315,7 @@ What is known as 'serpentine' or 'undulatory' locomotion can be achieved.
 With the motors connected with an offset of 90[deg], 3D motions can be achieved.
 However, I cannot guarantee the robustness of the current implementation of <strong>OPPAS</strong>, sine 3D motion usually comes with impacts and additional interaction with the environment.</p>
 <p><img alt="ubracket.png" src="../../img/ubracket.png" title="The uBracket" /></p>
-<p>The outer diameter of the uBracket is controlled by <code>capDiameter</code> and the slots are designed to math the ones in the module caps.
+<p>The outer diameter of the uBracket is controlled by <code>capDiameter</code> and the slots are designed to match the ones in the module caps.
 The main parameters of the uBracket that can be changed are summarized as follows:</p>
 <table>
 <thead>
@@ -331,7 +331,7 @@ The main parameters of the uBracket that can be changed are summarized as follow
 </tr>
 <tr>
 <td align="left"><code>hornLength</code></td>
-<td align="left">Distance from the uBracket base to the axis of the servomotor. The longer <code>hornLength</code>is, the bigger the range of motion of the joint. However, this means a weaker uBracket.</td>
+<td align="left">Distance from the uBracket base to the axis of the servomotor. The longer <code>hornLength</code> is, the bigger the range of motion of the joint. However, this means a weaker uBracket.</td>
 </tr>
 </tbody>
 </table>
